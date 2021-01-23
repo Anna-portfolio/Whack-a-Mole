@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+    font-family: 'Architects Daughter', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000000dc;
+    font-weight: bold;
+}  
+body{
+    margin: 0;
+    font-size: 16px;
+}
+.home-box, .result-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1000px;
+    max-height: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgb(74, 216, 138);
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.534);
+}
+.home-box div{
+    max-width: 1000px;
+    max-height: 700px;
+    text-align: center;
+}
+.home-box h1{
+    margin: 0px 60px;
+    font-size: 80px;
+    font-weight: bolder;
+}
+.home-box p{
+    margin: 10px;
+    font-size: 35px;
+    font-style: oblique;
+}
+/* blinking text on the Start page*/
+.blink-text{
+    margin-top: 2vh;
+    font-size: 40px;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0%   {opacity: 1;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;} 
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    padding: 3px 10px 3px 10px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: auto;
+    letter-spacing: 1px;
+    background: linear-gradient(rgba(255, 251, 2, 0.986), rgba(255, 188, 2, 0.986));
+    text-decoration: none;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    transition: .1s ease-in;
+}
+.btn:hover{
+    background: linear-gradient(rgba(255, 188, 2, 0.986), rgba(255, 251, 2, 0.986));
+    box-shadow: 2px 2px 8px #888888;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.score-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.game-box {
+    background: url("images/meadow.png") no-repeat;
+    background-position: center center;
+    background-attachment: absolute;
+    background-size: cover;
+    max-width: 1000px;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    cursor: url("images/hammer.png"), auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.534);
+}
+.score-time-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.664);
+}
+.title-sec{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+}
+.score-sec, .time-sec{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+#score, #time-left{
+    margin-left: 30px;
+}
+.smash{
+    content: "";
+    height: 100px;
+    width: 88px;
+    position: absolute;
+    transition: transform .2s linear;
+    transform: scale(1.2);
+    opacity: 0;
+}
+.smash-active{
+    opacity: 1;
+}
+.result-box h1{
+    margin: 60px 60px 30px 60px;
+    font-size: 80px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.74);
+}
+.result-box table{
+    display: flex;
+    margin: 30px auto;
+}
+.result-box td{
+    font-size: 50px;
+    font-weight: bolder;
+    justify-content: center;
+}
+.grid{
+    max-width: 300vh;
+    max-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 60px;
+}
+.square{
+    height: 200px;
+    width: 200px;  
+    background-image: url("images/molehill.png");
+    background-size: 200px;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin: 0px 10px;
+}
+.mole{
+    background-image: url("images/molehill-mole.png");
+    background-size: 200px;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.hide{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    html{
+        background-color: rgb(74, 216, 138);
+        background-position: center;
+    }
+    .home-box, .game-box, .result-box{
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        max-width: none;
+        max-height: none;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0;
+        padding-top: 7vh;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    .home-box h1, .result-box h1{
+        font-size: 8vh;
+        padding: 3vh 1vw;
+    }
+    .home-box p, .game-box h2{
+        font-size: 5vh;
+        margin: 0 5vw;
+    }
+    .blink-text{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 5vh;
+    }
+    .btn{
+        width: 30vh;
+        height: 6vw;
+        font-size: 5vh;
+    }
+    .game-box{
+        background-position: left top;
+        cursor: auto;
+    }
+    .game-box h1{
+        font-size: 5vh;
+    }
+    .game-box h2{
+        padding-bottom: 20px;
+    }
+    .grid{
+        margin: 10vh 20px 20px 50px;
+    }
+    .square{
+        height: 25vh;
+        width: 25vh;
+        background-size: 25vh;
+    }
+    .mole{
+        background-size: 25vh;
+    }
+    .result-box td{
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 768px){
+    .btn{
+        width: 25vh;
+        height: 6vw;
+        font-size: 3vh;
+        margin-top: 5vh;
+    }
+    .score-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grid{
+        margin: 7vh 20px 20px 20px;
+    }
+    .square{
+        height: 20vh;
+        width: 20vh;
+        background-size: 20vh;
+    }
+    .mole{
+        background-size: 20vh;
+    }
+}
+@media (max-width: 480px){
+    .home-box, .game-box, .result-box{
+        padding-top: 4vh;
+    }
+    .home-box h1, .result-box h1{
+        margin: 0px 2vh;
+        font-size: 5vh;
+        padding: 2vh 1vw;
+    }
+    .home-box p, .game-box h2{
+        font-size: 3vh;
+        margin: 0 2vw;
+    }
+    .blink-text{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 3vh;
+    }
+    .btn{
+        width: 25vh;
+        height: 5vw;
+        font-size: 2vh;
+    }
+    .game-box h1{
+        font-size: 4vh;
+    }
+    .game-box h2{
+        padding-bottom: 20px;
+    }
+    .grid{
+        margin: 20vh 2vh 2vh 2vh;
+    }
+    .square{
+        height: 15vh;
+        width: 15vh;
+        background-size: 15vh;
+    }
+    .mole{
+        background-size: 15vh;
+    }
+    #score, #time-left{
+        margin-left: 3vw;
+    }
+}
+@media (max-width: 320px){
+    .btn{
+        width: 20vh;
+        height: 10vw;
+        font-size: 2vh;
+    }
+    .grid{
+        margin: 20vh 2vh 2vh 2vh;
+    }
+    .square{
+        height: 10vh;
+        width: 10vh;
+        background-size: 10vh;
+    }
+    .mole{
+        background-size: 10vh;
+    }
+}
+@media (max-width: 240px){
+    .grid{
+        margin: 10vh 2vh 2vh 2vh;
+    }
+}
