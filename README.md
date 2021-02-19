@@ -8,5 +8,6 @@ Main features:
 - other visual effects: a hammer-cursor and on-hover animated buttons;
 - responsive design.
 
-INFO: All the images and sounds created by @Anna-portfolio 
-(No moles were harmed during sound recording :))
+
+INFO: All the images and sounds created by @Anna-portfolio (No moles were harmed during sound recording :))
+INFO: Check also "Mole's Revenge" in Python (Pygame): https://github.com/Anna-portfolio/Mole-Revenge.git
