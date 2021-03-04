@@ -1,5 +1,5 @@
 # Whack-a-Mole
-An arcade game using HTML, CSS, and pure JavaScript
+An arcade game using HTML, CSS, and JavaScript (no library)
 
 ![whack-a-mole-img](https://user-images.githubusercontent.com/75646880/109956070-7fe3fb80-7ce3-11eb-9cbd-e71fdbf114b2.png)
 
