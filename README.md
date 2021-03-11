@@ -1,5 +1,5 @@
 # Whack-a-Mole
-An arcade game using HTML, CSS, and JavaScript (no library)
+An arcade game using HTML, CSS, and JavaScript (plain)
 
 ![whack-a-mole-img](https://user-images.githubusercontent.com/75646880/109956070-7fe3fb80-7ce3-11eb-9cbd-e71fdbf114b2.png)
 
@@ -13,4 +13,3 @@ Main features:
 
 INFO: 
 - All the images and sounds created by @Anna-portfolio (No moles were harmed during sound recording :))
-- Check also "Mole's Revenge" in Python (Pygame): https://github.com/Anna-portfolio/Mole-Revenge.git
