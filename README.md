@@ -13,4 +13,4 @@ Main features:
 
 INFO: 
 - All the images and sounds created by @Anna-portfolio (No moles were harmed during sound recording :))
-- see also "Mole's Revenge" in Python https://github.com/Anna-portfolio/Mole-Revenge
+- see also "Mole's Revenge" in Python (Pygame; https://github.com/Anna-portfolio/Mole-Revenge-Python) and "Mole's Revenge" in JavaScript (plain; https://github.com/Anna-portfolio/Mole-Revenge-JS) 
